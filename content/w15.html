@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='w5.html'>w5</a><li><a href='w6.html'>w6</a><li><a href='w7.html'>w7</a><li><a href='w12.html'>w12</a><li><a href='w13.html'>w13</a><li class='has-children'><a href='w15.html'>w15</a><ul class='dropdown'><li><a href='9 編寫一個 C 程式來建立並列印以下範例的序列。.html'>9 編寫一個 C 程式來建立並列印以下範例的序列。</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li><a href='w5.html'>w5</a><li><a href='w6.html'>w6</a><li><a href='w7.html'>w7</a><li><a href='w12.html'>w12</a><li><a href='w13.html'>w13</a><li><a href='w15.html'>w15</a><li class='has-children'><a href='ANSIC.html'>ANSIC</a><ul class='dropdown'><li><a href='9 編寫一個 C 程式來建立並列印以下範例的序列。.html'>9 編寫一個 C 程式來建立並列印以下範例的序列。</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,7 +142,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w13 << <a href='w13.html'>Previous</a> <a href='9 編寫一個 C 程式來建立並列印以下範例的序列。.html'>Next</a> >> 9 編寫一個 C 程式來建立並列印以下範例的序列。<br /><h1>w15</h1>
+    <div id="tipue_search_content">w13 << <a href='w13.html'>Previous</a> <a href='ANSIC.html'>Next</a> >> ANSIC<br /><h1>w15</h1>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 #include &lt;gd.h&gt;
 #include &lt;math.h&gt;
@@ -208,181 +208,8 @@ void draw_roc_flag(gdImagePtr img) {
     gdImageLine(img, dx, dy, ax, ay, white);
 }
 </pre>
-<br/><br/><br/><br/><img alt="" height="267" src="./../images/roc_flag_in_gd.png" width="400"/><br/><br/>ANSIC<br/><br/><br/>
-<p><img alt="" height="239" src="./../images/螢幕擷取畫面 2023-12-28 151053.png" width="400"/></p>
-<p><br/><br/><span>2</span><span>編寫一個 C 程式來取得您正在使用的 C 版本。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-
-int main(int argc, char** argv) {
-    // Check for C standard version
-    #if __STDC_VERSION__ &gt;=  201710L
-        printf("We are using C18!\n");
-    #elif __STDC_VERSION__ &gt;= 201112L
-        printf("We are using C11!\n");
-    #elif __STDC_VERSION__ &gt;= 199901L
-        printf("We are using C99!\n");
-    #else
-        printf("We are using C89/C90!\n");
-    #endif
-
-    // Indicate successful execution
-    return 0;
-}</pre>
-<p><img alt="" height="79" src="./../images/螢幕擷取畫面 2023-12-28 152621.png" width="400"/></p>
-<p><br/><br/><span>3</span><span>寫一個 C 程序，逆向列印下列字元。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-
-int main() 
-{
-    // Declare and initialize character variables
-    char char1 = 'P';
-    char char2 = 'M';
-    char char3 = 'L';
-
-    // Print the original and reversed characters
-    printf("The reverse of %c%c%c is %c%c%c\n",
-        char1, char2, char3,
-        char3, char2, char1);
-
-    return(0);
-}</pre>
-<p><img alt="" height="77" src="./../images/螢幕擷取畫面 2023-12-28 153243.png" width="400"/></p>
-<p><br/><br/>4<span>寫一個 C 程式來計算高 7 英吋、寬 5 英吋的矩形的周長和面積。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt; 
-
-/* 
-   Variables to store the width and height of a rectangle in inches 
-*/
-int width;          
-int height;         
-
-int area;           /* Variable to store the area of the rectangle */
-int perimeter;      /* Variable to store the perimeter of the rectangle */
-
-int main() {
-    /* Assigning values to height and width */
-  height = 7;
-  width = 5;
-
-    /* Calculating the perimeter of the rectangle */
-    perimeter = 2*(height + width);
-  printf("Perimeter of the rectangle = %d inches\n", perimeter);
-
-    /* Calculating the area of the rectangle */
-  area = height * width;
-  printf("Area of the rectangle = %d square inches\n", area);
-
-    return(0);
-}</pre>
-<p><img alt="" height="73" src="./../images/螢幕擷取畫面 2023-12-28 153649.png" width="400"/></p>
-<p><br/><br/>5 <span>寫一個 C 程式來計算給定半徑的圓的周長和面積。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-
-int main() {
-   int radius;      /* Variable to store the radius of the circle */
-   float area, perimeter;    /* Variables to store the area and perimeter of the circle */ 
-   radius = 6;      /* Assigning a value to the radius */
-
-   /* Calculating the perimeter of the circle */
-   perimeter = 2 * 3.14 * radius;
-   printf("Perimeter of the Circle = %f inches\n", perimeter);
-	
-   /* Calculating the area of the circle */
-   area = 3.14 * radius * radius;
-   printf("Area of the Circle = %f square inches\n", area);
-
-   return(0);
-}</pre>
-<p><img alt="" height="66" src="./../images/螢幕擷取畫面 2023-12-28 154034.png" width="400"/></p>
-<p><br/><br/>6 <span>寫一個 C 程式將指定的日期轉換為年、週和日。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-
-int main()
-{
-    int days, years, weeks;
-
-    days = 1329; // Total number of days
-
-    // Converts days to years, weeks and days
-    years = days/365; // Calculate years
-    weeks = (days % 365)/7; // Calculate weeks
-    days = days - ((years*365) + (weeks*7)); // Calculate remaining days
-
-    // Print the results
-    printf("Years: %d\n", years);
-    printf("Weeks: %d\n", weeks);
-    printf("Days: %d \n", days);
-
-    return 0;
-}</pre>
-<p><img alt="" height="118" src="./../images/螢幕擷取畫面 2023-12-28 154614.png" width="400"/></p>
-<p><br/><br/>7 <span>受三個整數並找出三個整數中的最大值。</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-int main()
-{
-    int x, y, z, result, max; // Declare variables
-    
-    // Prompt user for the first integer and store in 'x'
-    printf("\nInput the first integer: "); 
-    scanf("%d", &amp;x);
-    
-    // Prompt user for the second integer and store in 'y'
-    printf("\nInput the second integer: ");
-    scanf("%d", &amp;y);
-    
-    // Prompt user for the third integer and store in 'z'
-    printf("\nInput the third integer: ");
-    scanf("%d", &amp;z);
-    
-    // Calculate the result
-    result = (x + y + abs(x - y)) / 2;
-    
-    // Calculate the maximum value
-    max = (result + z + abs(result - z)) / 2;
-    
-    // Print the maximum value
-    printf("\nMaximum value of three integers: %d", max);
-	printf("\n");
-    
-    return 0;
-}</pre>
-<p><br/><img alt="" height="285" src="./../images/螢幕擷取畫面 2023-12-28 155842.png" width="400"/><br/>8  找出<span>1 到 199 之間的質數為</span></p>
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-int main() {
-    int i, j, flag, ip = 0;
-
-    // Print a message indicating the purpose of the program
-    printf("The prime numbers between 1 and 199 are:\n");
-
-    // Loop to check prime numbers from 2 to 198
-    for (i = 2; i &lt; 199; i++) {
-        flag = 1;
-
-        // Loop to check if i is divisible by any number other than 1 and itself
-        for (j = 2; j &lt;= i / 2 &amp;&amp; flag == 1; j++) {
-            if (i % j == 0) {
-                flag = 0;
-            }
-        }
-
-        // If i is prime, print it
-        if (flag == 1) {
-            printf("%5d ", i);
-            ip++;
-
-            // Print a newline character after every 10 prime numbers
-            if (ip % 10 == 0) {
-                printf("\n");
-            }
-        }
-    }
-
-    printf("\n");
-
-    return 0;
-}</pre>
-<p><span class="token comment"><img alt="" height="174" src="./../images/螢幕擷取畫面 2023-12-28 160451.png" width="400"/><br/></span></p><br />w13 << <a href='w13.html'>Previous</a> <a href='9 編寫一個 C 程式來建立並列印以下範例的序列。.html'>Next</a> >> 9 編寫一個 C 程式來建立並列印以下範例的序列。</div>
+<p><br/><br/><br/><img alt="" height="267" src="./../images/roc_flag_in_gd.png" width="400"/></p>
+<br />w13 << <a href='w13.html'>Previous</a> <a href='ANSIC.html'>Next</a> >> ANSIC</div>
         
     <!-- footer -->
       <div class="container">
