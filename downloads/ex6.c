@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int a = 64;
-    int b = 0x40;
-    long c = 64L;
-    printf("%d,%d,%ld", a, b, c);
-    return 0;
+    int a = 64;      // 宣告一個整數變數 a，並將其值設置為十進制數字 64
+    int b = 0x40;    // 宣告一個整數變數 b，並將其值設置為十六進制數字 0x40（相當於十進制的 64）
+    long c = 64L;    // 宣告一個長整數變數 c，並將其值設置為十進制數字 64，後綴 L 表示長整數
+
+    printf("%d,%d,%ld", a, b, c);  // 使用 printf 函數將變數 a、b、c 的值按特定格式輸出到終端
+
+    return 0;        // 返回 0 表示程式正常結束
 }
