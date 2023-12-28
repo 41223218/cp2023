@@ -1063,8 +1063,26 @@ int main()
     // Indicate successful execution
     return(0); 
 }</pre>
-<img alt="" height="239" src="/images/螢幕擷取畫面 2023-12-28 151053.png" width="400"/>
-<h1>Brython</h1>
+<p>2<span>編寫一個 C 程式來取得您正在使用的 C 版本。</span></p>
+<p><img alt="" height="239" src="/images/螢幕擷取畫面 2023-12-28 151053.png" width="400"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+
+int main(int argc, char** argv) {
+    // Check for C standard version
+    #if __STDC_VERSION__ &gt;=  201710L
+        printf("We are using C18!\n");
+    #elif __STDC_VERSION__ &gt;= 201112L
+        printf("We are using C11!\n");
+    #elif __STDC_VERSION__ &gt;= 199901L
+        printf("We are using C99!\n");
+    #else
+        printf("We are using C89/C90!\n");
+    #endif
+
+    // Indicate successful execution
+    return 0;
+}</pre>
+<p><img alt="" height="79" src="/images/螢幕擷取畫面 2023-12-28 152621.png" width="400"/></p><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
