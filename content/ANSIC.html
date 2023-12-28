@@ -2,6 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,9 +142,44 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='w5.html'>Next</a> >> w5<br /><h1>About</h1>
-<p><a href="https://github.com/mdecycu/cmsite"> https://github.com/mdecycu/cmsite </a></p>
-<br /> <a href='w5.html'>Next</a> >> w5</div>
+    <div id="tipue_search_content">w15 << <a href='w15.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>ANSIC</h1>
+<p>1<span>編寫一個 C 程式來列印您的姓名、出生日期和手機號碼。</span></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+
+int main()  
+{
+    // Print Name
+    printf("Name   :Zhenlin LU\n"); 
+
+    // Print Date of Birth
+    printf("DOB    : September 24 2004\n"); 
+
+    // Print Mobile Number
+    printf("Mobile : 09-9999999999\n"); 
+
+    // Indicate successful execution
+    return(0); 
+}</pre>
+<p>2<span>編寫一個 C 程式來取得您正在使用的 C 版本。</span></p>
+<p><img alt="" height="239" src="./../images/螢幕擷取畫面 2023-12-28 151053.png" width="400"/></p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+
+int main(int argc, char** argv) {
+    // Check for C standard version
+    #if __STDC_VERSION__ &gt;=  201710L
+        printf("We are using C18!\n");
+    #elif __STDC_VERSION__ &gt;= 201112L
+        printf("We are using C11!\n");
+    #elif __STDC_VERSION__ &gt;= 199901L
+        printf("We are using C99!\n");
+    #else
+        printf("We are using C89/C90!\n");
+    #endif
+
+    // Indicate successful execution
+    return 0;
+}</pre>
+<p><img alt="" height="79" src="./../images/螢幕擷取畫面 2023-12-28 152621.png" width="400"/></p><br />w15 << <a href='w15.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
         
     <!-- footer -->
       <div class="container">
