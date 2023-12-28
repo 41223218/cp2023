@@ -218,18 +218,38 @@ int main() {
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 
 int main() {
-    char ch;
-    printf("輸入一個字元：");
+    char ch; // 宣告一個名為 ch 的字符變數
+
+    printf("輸入一個字元："); // 使用 printf 函數輸出提示文字，要求用戶輸入一個字元
+
+    // 使用 scanf 函數讀取用戶輸入的字元，檢查返回值是否為 1，代表成功讀取一個項目
     if (scanf("%c", &amp;ch) == 1) {
-        printf("你輸入的字元是：%c\n", ch); // 輸出用戶輸入的字元
+        printf("你輸入的字元是：%c\n", ch); // 如果成功讀取字元，使用 printf 函數輸出用戶輸入的字元
     } else {
-        printf("讀取失敗！\n");
+        printf("讀取失敗！\n"); // 如果 scanf 函數返回值不是 1，則使用 printf 函數輸出讀取失敗的訊息
     }
-    return 0;
+
+    return 0; // 結束 main 函數並返回 0，表示程式執行完畢並正常結束
 }</pre>
 <p><img alt="" height="113" src="./../images/螢幕擷取畫面 2023-12-28 202723.png" width="400"/></p>
 <p>8</p>
-<p></p><br />10編寫一個C程序，讀取1到12之間的整數並用英語列印一年中的月份。 << <a href='10編寫一個C程序，讀取1到12之間的整數並用英語列印一年中的月份。.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b;          // 宣告整數變數 a 和 b
+    float c;           // 宣告浮點數變數 c
+
+    a = b = 5 + 1;     // 將 5 + 1 的結果（即 6）同時賦值給 a 和 b
+
+    c = (float)a + 0.1;  // 將整數變數 a 轉換為浮點數，並加上 0.1，結果賦給浮點數變數 c
+
+    printf("a = %d\n", a);  // 輸出整數變數 a 的值，並換行
+    printf("b = %d\n", b);  // 輸出整數變數 b 的值，並換行
+    printf("c = %.2f\n", c);  // 輸出浮點數變數 c 的值，只顯示兩位小數，並換行
+
+    return 0;          // 返回 0 表示程式執行完畢並正常結束
+}</pre>
+<p><img alt="" height="137" src="./../images/螢幕擷取畫面 2023-12-28 210257.png" width="400"/><br/><br/></p><br />10編寫一個C程序，讀取1到12之間的整數並用英語列印一年中的月份。 << <a href='10編寫一個C程序，讀取1到12之間的整數並用英語列印一年中的月份。.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
         
     <!-- footer -->
       <div class="container">
