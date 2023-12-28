@@ -1330,25 +1330,30 @@ printf( " a = %3.1f, b = %3.1f, c = %d ", a ,b, c );
 <p><img alt="" height="63" src="/images/螢幕擷取畫面 2023-12-28 200526.png" width="400"/></p>
 <p>5</p>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
-int main()
-{
-char x, y;
-x = 'a';
-y = (char)97;
-/* 輸出 x, y, x, 最後一個是以 ASCII 值顯示 y */
-printf( " x = %c, y = %c, ASCII of y = %d", x, y, y );
-return 0;
+
+int main() {
+    char x, y;   // 宣告兩個字符變數 x 和 y
+
+    x = 'a';     // 將變數 x 的值設置為字符 'a'
+    y = (char)97; // 將變數 y 的值設置為 ASCII 碼為 97 的字符，使用顯式的型別轉換
+
+    // 使用 printf 函數輸出變數 x、y 的值以及 y 的 ASCII 值
+    printf(" x = %c, y = %c, ASCII of y = %d", x, y, y);
+
+    return 0;    // 返回 0 表示程式正常結束
 }</pre>
 <p><img alt="" height="57" src="/images/螢幕擷取畫面 2023-12-28 200837.png" width="400"/></p>
 <p>6</p>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 
 int main() {
-    int a = 64;
-    int b = 0x40;
-    long c = 64L;
-    printf("%d,%d,%ld", a, b, c);
-    return 0;
+    int a = 64;      // 宣告一個整數變數 a，並將其值設置為十進制數字 64
+    int b = 0x40;    // 宣告一個整數變數 b，並將其值設置為十六進制數字 0x40（相當於十進制的 64）
+    long c = 64L;    // 宣告一個長整數變數 c，並將其值設置為十進制數字 64，後綴 L 表示長整數
+
+    printf("%d,%d,%ld", a, b, c);  // 使用 printf 函數將變數 a、b、c 的值按特定格式輸出到終端
+
+    return 0;        // 返回 0 表示程式正常結束
 }</pre>
 <p><img alt="" height="88" src="/images/螢幕擷取畫面 2023-12-28 201837.png" width="400"/><br/><br/></p>
 <p>7</p>
